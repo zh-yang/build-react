@@ -1,0 +1,65 @@
+Arguments: 
+  /Users/zhihao/.nvm/versions/node/v12.12.0/bin/node /usr/local/bin/yarn add E dpl-react -S
+
+PATH: 
+  /Users/zhihao/.nvm/versions/node/v12.12.0/bin:/Users/zhihao/.nvm/versions/node/v4.1.2/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/zhihao/.nvm/versions/node/v4.1.2/bin:/usr/local/mysql/bin:/usr/local/mysql/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://npm.dc.servyou-it.com/E: no such package available
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66830:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140464:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141436:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141358:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1183:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "build-react",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "babel": "babel ./src/index.js -o ./public/bundle.js",
+      "start": "webpack-dev-server --open"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/cli": "^7.7.7",
+      "@babel/core": "^7.7.7",
+      "@babel/preset-env": "^7.7.7",
+      "@babel/preset-react": "^7.7.4",
+      "babel-loader": "^8.0.2",
+      "css-loader": "^1.0.0",
+      "style-loader": "^0.23.0",
+      "webpack": "^4.19.1",
+      "webpack-cli": "^3.1.1",
+      "webpack-dev-server": "^3.1.8"
+    },
+    "dependencies": {
+      "react": "^16.12.0",
+      "react-dom": "^16.12.0",
+      "react-hot-loader": "^4.12.18"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
